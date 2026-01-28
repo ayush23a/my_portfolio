@@ -3,6 +3,16 @@
 import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
+  
+  {
+    title: 'Fixpert',
+    tagline: 'AI-assisted Debbuger and Error Analyser ',
+    description:
+      'Automated email assistant that summarizes daily inbox activity using n8n and LLM, sending a draft digest every morning.',
+    stack: ['n8n', 'LLM', 'AI Automation', 'GCP', 'APIs', 'Gemini'],
+    github: 'https://github.com/ayush23a/n8n_projects/tree/main/Email_Summarizing_Agent', 
+    live: null,
+  },
   {
     title: 'Email Summarizing Agent',
     tagline: 'Email Summarizer Agent using AI Automation ',
@@ -71,6 +81,7 @@ const projects = [
 
 export function ProjectsSection() {
   return (
+    <>
     <section id="projects" className="py-24 md:py-32 bg-background/90 relative">
       <div className="container mx-auto px-4 max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-10 gradient-text text-center">Projects</h2>
@@ -135,5 +146,7 @@ export function ProjectsSection() {
         </div>
       </div>
     </section>
+    </>
+    
   );
 }
